@@ -111,6 +111,12 @@ HTS Output files:
 - Use the predicted protein structure to run DynAlloBind for prediction as described above.
 - Compare the results with the ground truth to calculate the RMSD.
 
+## License
+
+This project builds upon and extends the [DynamicBind](https://github.com/luwei0917/DynamicBind) framework,  
+originally developed by **Wei Lu (陆威)** under the **MIT License**.  
+All rights and credits for the original framework belong to the original author.
+
 
 
 
