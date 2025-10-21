@@ -1,10 +1,17 @@
+
+
+
 # DynAlloBind
-Source code and benchmark for the paper Dynamics-Inspired Generative Discovery of Allosteric Ligands Reveals HCAR1 as a Therapeutic Target in Inflammation
+**DynAlloBind** is an enhanced deep learning framework for protein–ligand virtual screening and structure prediction based on apo protein structures. It extends the capabilities of DynamicBind by incorporating fine-tuning on a strategically augmented dataset, with a particular focus on G-protein-coupled receptors (GPCRs). This specialization substantially improves model performance in predicting ligand-induced conformational changes and allosteric binding site dynamics within GPCR systems.
 
-The DynAlloBind model was developed by fine-tuning the original DynamicBind4 framework on a strategically augmented training set. We began with the complete DynamicBind dataset and expanded it by applying the identical data collection pipeline to encompass all relevant Protein Data Bank (PDB) depositions through the end of 2023. This extended set was further supplemented with a small, curated collection of additional GPCR–ligand complexes to ensure comprehensive coverage. 
+The model can:
 
-![](dynbind.gif)
+1) Generate ligand-bound holo conformations from apo protein inputs
 
+2) Predict ligand binding poses and affinity scores
+
+3) Support large-scale virtual screening
+   
 # Setup Environment
 
 Create a new environment for inference. While in the project directory run 
@@ -104,18 +111,6 @@ HTS Output files:
 - Use the predicted protein structure to run DynAlloBind for prediction as described above.
 - Compare the results with the ground truth to calculate the RMSD.
 
-# Reference
-```bibtex
-@article{lu2024dynamicbind,
-  title={DynamicBind: predicting ligand-specific protein-ligand complex structure with a deep equivariant generative model},
-  author={Lu, Wei and Zhang, Jixian and Huang, Weifeng and Zhang, Ziqiao and Jia, Xiangyu and Wang, Zhenyu and Shi, Leilei and Li, Chengtao and Wolynes, Peter G and Zheng, Shuangjia},
-  journal={Nature Communications},
-  volume={15},
-  number={1},
-  pages={1071},
-  year={2024},
-  publisher={Nature Publishing Group UK London}
-}
-```
+
 
 
